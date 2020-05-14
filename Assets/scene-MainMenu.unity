@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657856, g: 0.49641234, b: 0.57481724, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -145,8 +146,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -193,7 +195,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.594e-42, y: 1.02e-43, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: -8.5315843e-10}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -495,7 +497,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: scene1
+          m_StringArgument: Scenes/Terrain
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &879418284
@@ -568,7 +570,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.73762065}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.5, y: -20.8}
+  m_AnchoredPosition: {x: -0.5, y: -20.799805}
   m_SizeDelta: {x: -1, y: -41.600006}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &927084113
@@ -602,9 +604,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Your Name
+  m_Text: 'Aidan Cushing
 
-    Your Project name'
+    Sunset Caldera, and other Quarantine Oddities'
 --- !u!222 &927084114
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -882,10 +884,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 14
+    m_MinSize: 2
     m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -893,7 +895,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Scene3
+  m_Text: Probuilder Scene - Postmodern House with Pizza
 --- !u!222 &1173184240
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1034,10 +1036,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 14
+    m_MinSize: 2
     m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1045,7 +1047,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Scene2
+  m_Text: Snaps Scene - Giant Office Supplies Factory
 --- !u!222 &1351280056
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1122,7 +1124,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Scene1
+  m_Text: Terrain Scene - Sunset Caldera
 --- !u!222 &1540311727
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1317,10 +1319,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 28
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 14
+    m_MinSize: 2
     m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1328,7 +1330,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Scene4
+  m_Text: Cinemachine Scene - Caldera Flyover
 --- !u!222 &1778285236
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1427,7 +1429,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: scene4
+          m_StringArgument: Scenes/Cinemachine
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1904308917
